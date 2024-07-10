@@ -17,7 +17,7 @@ export default function YoutubeAnalyzer() {
         setLoading(true);
         setError(null);
         try {
-            const response = await fetch('http://127.0.0.1:8080/analyze', {
+            const response = await fetch('https://youtube-comments-backend.onrender.com/analyze', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
