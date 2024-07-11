@@ -59,7 +59,33 @@ export default function Home() {
           <h2 className="text-xl font-semibold mb-2"><a href="/api" className="text-indigo-400">Authentication API</a></h2>
           <p className="text-gray-300 underline font-bold">Description of Project</p>
           <p className="text-gray-300 font-semibold">This is a project where you can authenticate your user. You can register, log in, and log out your user.</p>
-          <h2><a href="/login" className="text-indigo-400">GitHub Link</a></h2>
+          <h2><a href="https://github.com/Gautam0612/login" className="text-indigo-400">GitHub Link</a></h2>
+        </motion.div>
+        <motion.div 
+          className="bg-gray-800 bg-opacity-70 p-6 rounded-lg shadow-lg"
+          whileHover={{ scale: 1.05 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.6 }}
+        >
+          <h2 className="text-xl font-semibold mb-2"><a href="/simulator" className="text-indigo-400">8085 Simulator</a></h2>
+          <p className="text-gray-300 underline font-bold">Description of Project</p>
+          <p className="text-gray-300 font-semibold">This is a project where you can simulate the 8085 microprocessor. You can write your code and simulate it.</p>
+          <h2><a href="/simulator" className="text-indigo-400">GitHub Link</a></h2>
+        </motion.div>
+        <motion.div 
+          className="bg-gray-800 bg-opacity-70 p-6 rounded-lg shadow-lg"
+          whileHover={{ scale: 1.05 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.6 }}
+        >
+          <h2 className="text-xl font-semibold mb-2"><a href="https://assignment-theta-three.vercel.app/" className="text-indigo-400">Weather App</a></h2>
+          <p className="text-gray-300 underline font-bold">Description of Project</p>
+          <p className="text-gray-300 font-semibold"> 
+            This is a project where you can check the weather of any city. You can check the temperature, humidity, and many more things of any city.
+          </p>
+          <h2><a href="/simulator" className="text-indigo-400">GitHub Link</a></h2>
         </motion.div>
         <motion.div 
           className="bg-gray-800 bg-opacity-70 p-6 rounded-lg shadow-lg"

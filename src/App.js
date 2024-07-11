@@ -5,6 +5,10 @@ import YoutubeAnalyzer from './components/YoutubeAnalyzer';
 import Contact from './components/Contact';
 import PdfHome from './components/PdfHome';
 import MergePDF from './components/merge';
+import WordToPdf from './components/wordtopdf';
+import ImageToPdf from './components/imgtopdf';
+import Pdftoword from './components/pdftoword';
+import PdfToImage from './components/pdftoimg';
 
 function App() {
   return (
@@ -13,6 +17,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path='/merge' element={<MergePDF />} />
         <Route path="/analyzer" element={<YoutubeAnalyzer />} />
+        <Route path="/pdftoword" element ={<Pdftoword />} />
+        <Route path="/wordtopdf" element ={<WordToPdf />} />
+        <Route path="/imgtopdf" element ={<ImageToPdf />} />
+        <Route path="/pdftoimg" element={<PdfToImage />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/pdfHome" element={<PdfHome />} />
       </Routes>

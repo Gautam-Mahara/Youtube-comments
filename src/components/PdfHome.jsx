@@ -20,9 +20,9 @@ export default function PdfHome() {
                     <br />
                     <ul className="text-center  grid grid-flow-row grid-cols-2 gap-8 m-5 ">
                         <li className="bg-pink-200 text-indigo-400 m-auto p-5 rounded-lg font-semibold  hover:underline text-xl"> <a href="/merge">PDF Editor </a></li>
-                        <li className="bg-pink-200 text-indigo-400 m-auto p-5 rounded-lg font-semibold  hover:underline text-xl"> <a href="/">PDF Viewer </a></li>
-                        <li className="bg-pink-200 text-indigo-400 m-auto p-5 rounded-lg font-semibold  hover:underline text-xl"> <a href="/">PDF Reader </a></li>
-                        <li className="bg-pink-200 text-indigo-400 m-auto p-5 rounded-lg font-semibold  hover:underline text-xl"> <a href="/">PDF Writer </a></li>
+                        <li className="bg-pink-200 text-indigo-400 m-auto p-5 rounded-lg font-semibold  hover:underline text-xl"> <a href="/pdftoword">PDF To WORD </a></li>
+                        <li className="bg-pink-200 text-indigo-400 m-auto p-5 rounded-lg font-semibold  hover:underline text-xl"> <a href="/pdftoimg">PDF To IMAGE </a></li>
+                        <li className="bg-pink-200 text-indigo-400 m-auto p-5 rounded-lg font-semibold  hover:underline text-xl"> <a href="/imgtopdf">IMG To PDF </a></li>
                     </ul>
                     <br />
                 </motion.div>
