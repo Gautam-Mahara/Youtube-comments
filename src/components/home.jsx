@@ -30,7 +30,7 @@ export default function Home() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <h2 className="text-xl font-semibold mb-2"><a href="/pdf" className="text-indigo-400">PDF Editor</a></h2>
+          <h2 className="text-xl font-semibold mb-2"><a href="/pdfHome" className="text-indigo-400">PDF Editor</a></h2>
           <p className="text-gray-300 underline font-bold">Description of Project.</p>
           <p className="text-gray-300 font-semibold">This is a project where you can edit your PDF file. You can add text, images, and many more things in your PDF file.</p>
           <h2><a href="/pdf" className="text-indigo-400">GitHub Link</a></h2>
