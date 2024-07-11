@@ -10,7 +10,7 @@ export default function NavBar() {
         >
             <ul className='flex flex-row justify-between'>
                 <li><a href="/">Home</a></li>
-                <li><a href="/https://gautam0612.github.io/">About</a></li>
+                <li><a href="https://gautam0612.github.io/">About</a></li>
                 <li><a href="/services">Projects</a></li>
                 <li><a href="/Contact">Contact</a></li>
             </ul>
