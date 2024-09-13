@@ -94,7 +94,7 @@ export default function Home() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.6 }}
         >
-          <h2 className="text-xl font-semibold mb-2"><a href="/simulator" className="text-indigo-400">8085 Simulator</a></h2>
+          <h2 className="text-xl font-semibold mb-2"><a href="/Gpt" className="text-indigo-400">Genertative Ai</a></h2>
           <p className="text-gray-300 underline font-bold">Description of Project</p>
           <p className="text-gray-300 font-semibold">This is a project where you can simulate the 8085 microprocessor. You can write your code and simulate it.</p>
           <h2><a href="/simulator" className="text-indigo-400">GitHub Link</a></h2>

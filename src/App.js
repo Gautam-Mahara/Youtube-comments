@@ -9,6 +9,8 @@ import WordToPdf from './components/wordtopdf';
 import ImageToPdf from './components/imgtopdf';
 import Pdftoword from './components/pdftoword';
 import PdfToImage from './components/pdftoimg';
+import CharBot from './components/CharBot';
+import LoginPage from './components/LoginPage';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
         <Route path="/pdftoimg" element={<PdfToImage />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/pdfHome" element={<PdfHome />} />
+        <Route path="/Gpt" element = {<CharBot/>} />
+
       </Routes>
     </Router>
   );
