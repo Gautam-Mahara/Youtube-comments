@@ -16,7 +16,7 @@ export default function Home() {
       >
         <h1 className='font-bold text-3xl p-10 m-10'>Hello, I am Gautam Singh Mahara</h1>
         <br />
-        <p className='text-xl font-semibold bg-gray-700 bg-opacity-70 rounded-xl underline line-clamp-3 leading-relaxed p-5'>
+        <p className='text-xl font-semibold bg-gray-700 bg-opacity-70 rounded-xl text-orange-300 line-clamp-3 leading-relaxed p-5'>
           I am a Dedicated Backend Developer and Machine Learning Engineer. I like to make projects for fun and try to solve my own as well as others' problems.
           I believe in making projects that can help people in their daily lives rather than making some projects that are not useful for anyone or copying some Youtuber's project.
           Some of my projects are listed below. You can check them out, and if you like them, you can contact me for more information.

@@ -1,0 +1,56 @@
+.my-card{
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px; */
+    display: flex;
+    flex-direction: row;
+    /* padding: 0 20px; */
+    justify-content: space-evenly;
+    margin-top: 5%;
+    flex-wrap: wrap;
+    margin-left: 2%;
+    word-wrap: break-word;
+    word-break: keep-all;
+    margin-right: 2%;
+    height: 50vh;
+    /* width: 100vh; */
+    text-align: center;
+}
+.my-card div{
+    background-color: #fdf0f8;
+    padding: 20px;
+    margin-top:2%;
+    text-align: center;
+    margin-bottom: 2%;
+    /* height: 90%; */
+    /* padding-top: 2%; */
+    border-radius: 10px;
+    width: 20%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.socials ul{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    background-color: #9f206f;
+    height: 10vh;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.socials ul li{
+    list-style: none;
+    margin: 0 2%;
+    text-emphasis-color: green;
+    margin: 0 10px;
+}
+
+.socials ul li a :hover{
+    color: #fff;
+}

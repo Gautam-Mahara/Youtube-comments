@@ -1,0 +1,258 @@
+/* Button styles */
+.menu-btn {
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  left: -250px;  /* Initially hidden */
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  transition: left 0.3s ease;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 20px 0;
+}
+
+/* Close button styles */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* When sidebar is open */
+.sidebar.open {
+  left: 0;  /* Slide in from left */
+}
+
+/* Default to hide sidebar and menu button on larger screens */
+.sidebar,
+.menu-btn {
+  display: none;
+}
+
+/* Media query for small screens (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  /* Show the sidebar and menu button on small screens */
+  .sidebar,
+  .menu-btn {
+    display: block;
+  }
+
+  /* Hide the nav-bar on small screens */
+  .nav-bar {
+    display: none;
+  }
+}
+
+//portfolio.css
+.body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  /* gradient: linear-gradient(90deg, #cc5042, #c69326); */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.nav-bar{
+  padding: 2%;
+  
+}
+.inner-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 100%;
+}
+.inner-nav li{
+  list-style: none;
+  display: inline;
+  padding: 0 10px;
+  text-decoration: dotted;
+  background-image: url(../../public/btn-1.png);
+  /* border: solid 1px; */
+}
+on:hover .inner-nav li{
+  /* size increase */
+  transform: scale(1.3);
+}
+.mid-section{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+
+  /* margin-top: 5%; */
+  /* margin-left: 2%; */
+  /* margin-right: 2%; */
+  /* background-image: url(../../public/btn-1.png); */
+  background-color: #fdf0f8;
+}
+
+
+.mid-section-inner {
+  /* space-between elements */
+  gap: 20px;
+  position: relative;
+  animation: fade 2s ease-in-out;
+  /* animation: fadeIn 2s ease-in-out; */
+}
+
+.btn-contact {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.dark-mode {
+  background-color: #121212;
+  color: rgb(230, 32, 32);
+  
+}
+
+.dark-mode .nav-bar ul {
+  background-color: #333;
+  color: white;
+}
+
+.dark-mode .mid-section-inner h1,
+.dark-mode .mid-section-inner p {
+  color: white;
+}
+
+.dark-mode .contact-btn {
+  background-color: #ff9800;
+  color: white;
+}
+
+/* Toggle button styles */
+.toggle-dark-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dark-mode .toggle-dark-btn {
+  background-color: #ff9800;
+}
+/* for mobile view */
+
+@media screen and (max-width: 768px){
+    .nav-bar {
+      display: none;
+      }
+      
+      .inner-nav {
+        display: none;
+      }
+
+      
+      
+}
+.mid-section-inner{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+/* space-between elements */
+gap: 20px;
+}
+.dark-mode {
+background-color: #121212;
+color: rgb(230, 32, 32);
+
+}
+
+.dark-mode .nav-bar ul {
+background-color: #333;
+color: white;
+}
+
+.dark-mode .mid-section-inner h1,
+.dark-mode .mid-section-inner p {
+color: white;
+}
+
+.dark-mode .contact-btn {
+background-color: #ff9800;
+color: white;
+}
+
+/* Toggle button styles */
+.toggle-dark-btn {
+position: fixed;
+top: 20px;
+right: 20px;
+padding: 10px 20px;
+background-color: #007bff;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.dark-mode .toggle-dark-btn {
+background-color: #ff9800;
+}
+/* for mobile view */
+
+@media screen and (max-width: 768px){
+  .nav-bar {
+    display: none;
+    }
+    
+    .inner-nav {
+      display: none;
+    }
+
+    
+    
+}
+
+@keyframes fade {
+from {
+  left: -100vh;
+}
+to {
+  left: 0;
+}
+}

@@ -11,21 +11,29 @@ import Pdftoword from './components/pdftoword';
 import PdfToImage from './components/pdftoimg';
 import CharBot from './components/CharBot';
 import LoginPage from './components/LoginPage';
+import Portfolio from './components/Portfolio';
+import Foot from './components/smallComponents/foot';
+import SignupPage from './components/Register';
+import MindWell from './components/mindwell';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path='/merge' element={<MergePDF />} />
+        <Route path="/m" element={< Pdftoword/>} />
+        <Route path="/signup" element={<SignupPage />} />
+        <Route path="/Portfolio" element={<Portfolio />} />
+        <Route path="/merge" element={<MergePDF />} />
         <Route path="/analyzer" element={<YoutubeAnalyzer />} />
         <Route path="/pdftoword" element ={<Pdftoword />} />
         <Route path="/wordtopdf" element ={<WordToPdf />} />
+        <Route path="/home" element ={<LoginPage />} />
         <Route path="/imgtopdf" element ={<ImageToPdf />} />
         <Route path="/pdftoimg" element={<PdfToImage />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/pdfHome" element={<PdfHome />} />
         <Route path="/Gpt" element = {<CharBot/>} />
+        <Route path = "/" element = {<MindWell/>}/>
 
       </Routes>
     </Router>

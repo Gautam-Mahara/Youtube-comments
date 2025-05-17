@@ -19,16 +19,17 @@
 // }
 import React from "react";
 import { motion } from "framer-motion";
+// import './cssfiles/mindwell.css'
 
 export default function NavBar() {
     return (
         <motion.nav
-            className='p-5 bg-gradient-to-r from-purple-800 via-purple-900 to-black text-white rounded-lg shadow-lg sticky top-0 z-50'
+            className='p-5 text-white rounded-lg shadow-lg sticky top-0 z-50'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
         >
-            <ul className='flex flex-row justify-between items-center space-x-8'>
+            <ul className='flex flex-row justify-between items-center space-x-8 mx-20 '>
                 <li className='hover:text-blue-400 transition-colors duration-300'>
                     <a href="/">Home</a>
                 </li>
@@ -36,7 +37,7 @@ export default function NavBar() {
                     <a href="https://gautam0612.github.io/">About</a>
                 </li>
                 <li className='hover:text-blue-400 transition-colors duration-300'>
-                    <a href="/services">Projects</a>
+                    <a href="/home">Login</a>
                 </li>
                 <li className='hover:text-blue-400 transition-colors duration-300'>
                     <a href="/Contact">Contact</a>
