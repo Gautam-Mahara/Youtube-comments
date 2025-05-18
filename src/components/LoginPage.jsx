@@ -3,54 +3,55 @@ import { useState, useEffect } from "react";
 import "./cssfiles/login.css";
 import { Navigate } from "react-router-dom";
 import axios from "axios";
+import "./cssfiles/login.css"
 
 const LoginPage = () => {
     
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        const url = "http://localhost:5000/login";
-        const data = {
-            username: e.target.username.value,
-            password: e.target.password.value,
-        }
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     const url = "http://localhost:5000/login";
+    //     const data = {
+    //         username: e.target.username.value,
+    //         password: e.target.password.value,
+    //     }
 
-        console.log("Login");
-        Navigate("/Portfolio");
+    //     console.log("Login");
+    //     Navigate("/Portfolio");
         // Add your code here to handle login
-    }
+    // }
     return (
-        <div className="flex items-center justify-center h-screen ">
-            <div className="bg-gray-700 p-8 rounded-lg shadow-md w-full max-w-md">
-                <h1 className="text-3xl font-semibold text-center mb-6 text-orange-500">Login</h1>
-                <form className="flex flex-col">
-                    <label htmlFor="username" className="text-orange-500 font-medium mb-2">Username</label>
+        <div className="layer-1">
+            <div className="layer-2">
+                <h1 className="logo">Login</h1>
+                <form className="layer-3" action="/Portfolio" method="POST">
+                    <label htmlFor="username" className="">Username</label>
                     <input 
                         type="text" 
                         id="username" 
                         name="username" 
-                        className="p-3 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                        className="" 
                         required 
                     />
-                    <label htmlFor="password" className="text-orange-500  font-medium mb-2">Password</label>
+                    <label htmlFor="password" className="">Password</label>
                     <input 
                         type="password" 
                         id="password" 
                         name="password" 
-                        className="p-3 border border-gray-300 rounded-lg mb-6 focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                        className="" 
                         required 
                     />
                     <button 
-                        onClick={handleSubmit}
+                        // onClick={handleSubmit}
                         type="submit" 
-                        className="bg-gray-300 text-orange-400 font-semibold py-3 rounded-lg hover:bg-blue-700 transition duration-300 mx-auto w-fit "
+                        className=" btn"
                     >
                         Login
                     </button>
-                </form>
-                <div className="flex justify-between mt-4 text-sm text-orange-500">
+                <div className="flex flex-col gap-2">
                     <a href="/forgot-password" className="hover:underline">Forgot Password?</a>
                     <a href="/signup" className="hover:underline">Register</a>
                 </div>
+                </form>
             </div>
         </div>
     );

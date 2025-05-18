@@ -4,7 +4,7 @@ import "./cssfiles/login.css";
 const SignupPage = () => {
     return (
         <div className="flex items-center justify-center h-screen ">
-            <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+            <div className="inner p-8 rounded-lg shadow-md w-full max-w-md">
                 <h1 className="text-3xl font-semibold text-center mb-6 text-gray-800">Sign Up</h1>
                 <form className="flex flex-col">
                     <label htmlFor="email" className="text-gray-600 font-medium mb-2">Email</label>

@@ -15,11 +15,14 @@ import Portfolio from './components/Portfolio';
 import Foot from './components/smallComponents/foot';
 import SignupPage from './components/Register';
 import MindWell from './components/mindwell';
+import MindWellQues from './components/mindwellQues';
+// import LoginPage from './components/LoginPage';
 
 function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/" element={<MindWellQues />} />
         <Route path="/m" element={< Pdftoword/>} />
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/Portfolio" element={<Portfolio />} />
@@ -33,7 +36,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/pdfHome" element={<PdfHome />} />
         <Route path="/Gpt" element = {<CharBot/>} />
-        <Route path = "/" element = {<MindWell/>}/>
+        <Route path = "/mindwell" element = {<MindWell/>}/>
 
       </Routes>
     </Router>
