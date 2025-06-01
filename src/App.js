@@ -16,27 +16,33 @@ import Foot from './components/smallComponents/foot';
 import SignupPage from './components/Register';
 import MindWell from './components/mindwell';
 import MindWellQues from './components/mindwellQues';
+import ForgetPass from './components/forgetpass';
+import { Otp } from './components/otp';
+import { PasswordUpdate } from './components/passwordupdate';
 // import LoginPage from './components/LoginPage';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<MindWellQues />} />
-        <Route path="/m" element={< Pdftoword/>} />
-        <Route path="/signup" element={<SignupPage />} />
-        <Route path="/Portfolio" element={<Portfolio />} />
-        <Route path="/merge" element={<MergePDF />} />
+        <Route path="/"         element={<LoginPage />} />
+        <Route path="/signup"   element={<SignupPage />} />
+        <Route path='/passwordupdate' element={<PasswordUpdate />} />
+        <Route path='/otp' element= {<Otp />} />
+        <Route path="/Portfolio"element={<Portfolio />} />
+        <Route path="/merge"    element={<MergePDF />} />
         <Route path="/analyzer" element={<YoutubeAnalyzer />} />
-        <Route path="/pdftoword" element ={<Pdftoword />} />
-        <Route path="/wordtopdf" element ={<WordToPdf />} />
-        <Route path="/home" element ={<LoginPage />} />
+        <Route path="/pdftoword"element ={<Pdftoword />} />
+        <Route path="/wordtopdf"element ={<WordToPdf />} />
+        <Route path="/home"     element ={<LoginPage />} />
         <Route path="/imgtopdf" element ={<ImageToPdf />} />
         <Route path="/pdftoimg" element={<PdfToImage />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/pdfHome" element={<PdfHome />} />
-        <Route path="/Gpt" element = {<CharBot/>} />
-        <Route path = "/mindwell" element = {<MindWell/>}/>
+        <Route path="/contact"  element={<Contact />} />
+        <Route path="/pdfHome"  element={<PdfHome />} />
+        <Route path="/Gpt"      element = {<CharBot/>} />
+        <Route path="/login" element = {<LoginPage/>}/>
+        <Route path='/forget-password' element={<ForgetPass />} />
+        <Route path="/mindwell" element={<MindWellQues />} />
 
       </Routes>
     </Router>

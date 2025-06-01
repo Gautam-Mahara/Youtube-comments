@@ -1,8 +1,15 @@
 import React from "react";
 // import Navbar from "./NavBar";
 import './cssfiles/mindwell.css'
+import { useNavigate } from "react-router-dom";
 
 function MindWell() {
+    // const [isLoggedIn, setIsLoggedIn] = React.useState(false);
+    const nav = useNavigate();
+    const handleclick = () => {
+        // Logic for handling login
+        nav('/login')
+    };
 return <>
         
         <div className="flex flex-col items-center justify-center">
@@ -20,11 +27,10 @@ return <>
                 </li>
                 <li className='hover:text-blue-400 transition-colors duration-300'>
                     <a href="/Contact">Contact</a>
-
                 </li>
             </ul> */}
             <h1> Welcome To MindWell</h1>
-            <button className=" hover:mix-blend-multiply">Login</button>
+            <button className=" hover:mix-blend-multiply" onClick={handleclick}>Login</button>
         </div>
     <div className="sec-2">
         <h1>What is MindWell?</h1>
