@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import NavBar from "./NavBar";
-import Footer from "./footer";
+import Footer from "./general_components/footer";
 
 export default function Contact() {
     const [showContacts, setShowContacts] = useState(false);
