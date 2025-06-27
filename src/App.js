@@ -22,6 +22,7 @@ import { PasswordUpdate } from './components/mindwell_components/passwordupdate'
 import Activities from './components/mindwell_components/activities';
 import Dashboard from './components/mindwell_components/dashboard';
 import Meditation from './components/mindwell_components/meditation';
+import Idea from './components/idea';
 // import LoginPage from './components/LoginPage';
 
 function App() {
@@ -29,7 +30,7 @@ function App() {
     <Router>
       <Routes>
         {/* mindwell Routes */}
-        <Route path="/"         element={<MindWell />} />
+        <Route path="/" element={<Idea />} />
         <Route path="/login" element = {<LoginPage/>}/>
         <Route path="/signup"   element={<SignupPage />} />
         <Route path="/mindwell" element={<MindWellQues />} />
