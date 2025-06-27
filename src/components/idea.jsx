@@ -3,38 +3,43 @@ import React, { useState, useEffect } from "react";
 export default function Idea() {
   const [step, setStep] = useState(0);
   const [fade, setFade] = useState(true);
-  
-  // Messages for different stages
+
+  // Kumaoni-style messages
   const messages = [
     {
-      title: "Missing Our Conversations 😢",
-      content: "I've noticed we haven't talked much lately...",
-      button: "Why is that?"
+      title: "Tumri baat chit badi yaad aunchha 😢",
+      content: "Kain itna ignore karno cha?",
+      button: "NHi Karni"
     },
     {
-      title: "I Value Our Connection 💖",
-      content: "I really enjoy talking with you and getting to know you better.",
-      button: "How I feel"
+      title: "Tumri aur meri yaari moolya cha 💖",
+      content: "Yaar, kam se kam baat ta karla",
+      button: "Nahi karni"
     },
     {
-      title: "My Feelings For You 🌹",
-      content: "I've developed feelings for you, and it's made me a bit nervous to reach out.",
-      button: "What I'd like"
+      title: "Baira dabav ni cha 🌼",
+      content: "Samajh cha, baira kyu na karni",
+      button: "My Wish"
     },
     {
-      title: "No Pressure, Just Honesty 🌼",
-      content: "I understand if you need space or don't feel the same way. I just wanted to be honest about how I feel.",
-      button: "My hope"
+      title: "🤝",
+      content: "Main itna kharab cha kya ki baat ni aau?",
+      button: "Nahi ata"
     },
     {
-      title: "Hope For Understanding 🤝",
-      content: "Whether as friends or something more, I truly value having you in my life.",
-      button: "Final thoughts"
+      title: "Baira ignore ni karla",
+      content: "Bhatt khana hajam ni huni tigi",
+      button: "Please karlo"
     },
     {
-      title: "Thank You For Being You 💫",
-      content: "No matter what happens, I appreciate you and the time we've shared. I'll respect whatever you decide.",
-      button: "Close"
+        title: "Kya itna bura hu?",
+        content : "Itna bura bhi nhi hu ki ignore karna pade",
+        button: " ha Bura hai"
+    },
+    {
+        title: "Na bura ni hu",
+        content: " i dont know how to talk to girls",
+        button: "I know"
     }
   ];
 
@@ -45,13 +50,12 @@ export default function Idea() {
   }, [step]);
 
   const handleNext = () => {
-    if (step < messages.length - 1) {
+    // Loop last two questions forever
+    if (step < messages.length - 2) {
       setStep(step + 1);
+    } else {
+      setStep(messages.length - 2);
     }
-  };
-
-  const handleReset = () => {
-    setStep(0);
   };
 
   return (
@@ -82,22 +86,23 @@ export default function Idea() {
         </div>
         
         <p style={styles.message}>{messages[step].content}</p>
-        
-        {step < messages.length - 1 ? (
-          <button 
-            onClick={handleNext}
-            style={styles.button}
-          >
-            {messages[step].button}
-          </button>
-        ) : (
-          <button 
-            onClick={handleReset}
-            style={{ ...styles.button, backgroundColor: '#ff85a2' }}
-          >
-            View Again
-          </button>
-        )}
+
+        <button onClick={handleNext} style={styles.button}>
+          {messages[step].button}
+        </button>
+
+        <a
+          href="https://wa.me/7976045853"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            ...styles.button,
+            marginTop: '15px',
+            backgroundColor: '#25D366'
+          }}
+        >
+           bat karte hai
+        </a>
       </div>
       
       <div style={styles.footer}>
@@ -193,6 +198,8 @@ const styles = {
     cursor: 'pointer',
     transition: 'all 0.3s ease',
     boxShadow: '0 4px 15px rgba(233, 30, 99, 0.3)',
+    textDecoration: 'none',
+    display: 'inline-block',
   },
   footer: {
     position: 'absolute',
