@@ -30,7 +30,7 @@ function App() {
     <Router>
       <Routes>
         {/* mindwell Routes */}
-        <Route path="/" element={<Idea />} />
+        <Route path="/" element={<MindWell />} />
         <Route path="/login" element = {<LoginPage/>}/>
         <Route path="/signup"   element={<SignupPage />} />
         <Route path="/mindwell" element={<MindWellQues />} />
