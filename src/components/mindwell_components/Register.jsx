@@ -87,7 +87,7 @@ const SignupPage = () => {
                 password: formData.password
             };
             
-            const response = await axios.post("http://localhost:8080/signup", data);
+            const response = await axios.post("https://backend-web-l7sk.onrender.com/signup", data);
             
             if (response.data.email) {
                 navigate('/otp', { state: { email: response.data.email } });

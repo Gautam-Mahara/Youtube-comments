@@ -78,7 +78,7 @@ const Otp = () => {
         }
         
         try {
-            const response = await axios.post("http://localhost:8080/verify", {
+            const response = await axios.post("https://backend-web-l7sk.onrender.com/verify", {
                 otp: otpString,
                 email: email
             });
